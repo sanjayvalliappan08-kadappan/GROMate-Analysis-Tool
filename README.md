@@ -105,7 +105,7 @@ Resulting file: `FGFR_LIGAND1_complex_RMSD_PROT.xvg`
 
 - Group numbers (1, 4, 13...) are **assumptions** based on a custom `index.ndx` — if your ligand isn't group 13, you must override it at the prompt.
 - The script doesn't auto-generate an index file (`gmx make_ndx`) — you must create one yourself beforehand if the ligand isn't in the default groups.
-- No plotting — output is raw `.xvg`; you'll need `xmgrace`, `gmx_MMPBSA`, or Python (`matplotlib`/`pandas`) to visualize the curves.
+- No plotting — output is raw `.xvg`; you'll need `xmgrace`,  or Python (`matplotlib`/`pandas`) to visualize the curves.
 - Sequential execution — analyses run one after another, not in parallel.
 - Hardcoded list of 10 analyses — no plugin/config system for adding custom `gmx` commands.
 
